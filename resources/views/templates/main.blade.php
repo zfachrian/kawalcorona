@@ -4,6 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zfachrian | @yield('title') &mdash; Situs Data Realtime COVID-19</title>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+    <script src="lib/example.js"></script>
+    <link rel="stylesheet" href="lib/example.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+    <style type="text/css">
+    .morris-hover.morris-default-style {
+      display: none !important;
+    }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
   </head>
   <body>
 
@@ -30,28 +44,6 @@
                 <a href="/" class="animsition-link">Home</a>
               </li>
               <li><a href="/hotline" class="animsition-link">Hotline Corona</a></li>
-              {{-- <li>
-                <a href="services.html" class="animsition-link">Services</a>
-                <ul>
-                  <li><a href="#">Service 1</a></li>
-                  <li><a href="#">Service 2</a></li>
-                  <li>
-                    <a href="#">Service 3</a>
-                    <ul>
-                      <li><a href="#">Service 1</a></li>
-                      <li><a href="#">Service 2</a></li>
-                      <li>
-                        <a href="#">Service 3</a>
-                        <ul>
-                          <li><a href="#">Service 1</a></li>
-                          <li><a href="#">Service 2</a></li>
-                          <li><a href="#">Service 3</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li> --}}
               <li><a href="/contact" class="animsition-link">Contact</a></li>
             </ul> <!-- .templateux-menu -->
 
