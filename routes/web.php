@@ -19,6 +19,14 @@ Route::get('/hotline', function () {
     return view('hotline');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/KebijakandanPrivasi', function () {
+    return view('kebijakan');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
 });

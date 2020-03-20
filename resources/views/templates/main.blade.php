@@ -4,13 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zfachrian | @yield('title') &mdash; Situs Data Realtime COVID-19</title>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
-    <script src="lib/example.js"></script>
-    <link rel="stylesheet" href="lib/example.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
     <style type="text/css">
     .morris-hover.morris-default-style {
@@ -44,7 +41,8 @@
                 <a href="/" class="animsition-link">Home</a>
               </li>
               <li><a href="/hotline" class="animsition-link">Hotline Corona</a></li>
-              <li><a href="/contact" class="animsition-link">Contact</a></li>
+              <li><a href="/about" class="animsition-link">About</a></li>
+              <li><a href="/KebijakandanPrivasi" class="animsition-link">Kebijakan dan Privasi</a></li>
             </ul> <!-- .templateux-menu -->
 
           </nav> <!-- .site-nav -->
@@ -63,55 +61,41 @@
             <div class="col-md-4 pr-md-5">
               <div class="block-footer-widget">
                 <h3>About</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>Kawal Corona untuk mengurai derasnya informasi seputar COVID-19.</p>
               </div>
             </div>
 
             <div class="col-md-8">
               <div class="row">
-                <div class="col-md-3">
+
+                <div class="col-md-4">
                   <div class="block-footer-widget">
-                    <h3>Learn More</h3>
+                    <h3>Information</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">How it works?</a></li>
-                      <li><a href="#">Useful Tools</a></li>
-                      <li><a href="#">Pricing</a></li>
-                      <li><a href="#">Sitemap</a></li>
+                      <li><a href="/faq">FAQ</a></li>
+                      <li><a href="https://kawalcovid19.blob.core.windows.net/viz/statistik_harian.html">Statistic</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="block-footer-widget">
-                    <h3>Support</h3>
-                    <ul class="list-unstyled">
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                      <li><a href="#">Help Desk</a></li>
-                      <li><a href="#">Knowledgebase</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="block-footer-widget">
                     <h3>About Us</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Terms of Service</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/KebijakandanPrivasi">Kebijakan dan Privasi</a></li>
                     </ul>
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="block-footer-widget">
-                    <a href="#" class="btn btn-primary mb-3">Download for free</a>
-                    <p>Connect With Us</p>
+                    <h3>Connect With Me</h3>
                     <ul class="list-unstyled block-social">
-                      <li><a href="#" class="p-1"><span class="icon-facebook-square"></span></a></li>
-                      <li><a href="#" class="p-1"><span class="icon-twitter"></span></a></li>
-                      <li><a href="#" class="p-1"><span class="icon-github"></span></a></li>
-                    </ul>
+                        <li><a href="https://id.linkedin.com/in/zfachrian" class="p-1"><span class="icon-linkedin-square"></span></a></li>
+                        <li><a href="https://www.instagram.com/zfachrian/" class="p-1"><span class="icon-instagram"></span></a></li>
+                        <li><a href="https://twitter.com/fachrian_9" class="p-1"><span class="icon-twitter"></span></a></li>
+                        <li><a href="https://github.com/zfachrian" class="p-1"><span class="icon-github"></span></a></li>
+                      </ul>
                   </div>
                 </div>
               </div> <!-- .row -->

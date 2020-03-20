@@ -3,20 +3,41 @@
 @section('script')
 
 <script>
-  Morris.Bar({
-  element: 'myfirstchart',
-  data: [
-    {x: 'Positif', y: 2},
-    {x: 'Meninggal', z: 2},
-    {x: 'Sembuh', a: 2},
-
-  ],
-  xkey: 'x',
-  ykeys: ['y', 'z', 'a'],
-  labels: ['Y', 'Z', 'A']
-}).on('click', function(i, row){
-  console.log(i, row);
+     $.ajax({
+    url: "https://coronavirus-19-api.herokuapp.com/countries/indonesia",
+    type: "get",
+    dataType: "json",
+    success: function (result) {
+        console.log(result["country"])
+    }
 });
+
+</script>
+<script>
+     $.ajax({
+    url: "https://coronavirus-19-api.herokuapp.com/countries/indonesia",
+    type: "get",
+    dataType: "json",
+    success: function (result) {
+        console.log(result["country"])
+        Morris.Bar({
+        element: 'myfirstchart',
+        data: [
+            {x: 'Positif', z: result["cases"]},
+            {x: 'Sembuh', z: result["recovered"]},
+            {x: 'Meninggal', z: result["deaths"]},
+
+        ],
+        xkey: 'x',
+        ykeys: ['y', 'z', 'a'],
+        labels: ['Y', 'Z', 'A']
+        }).on('click', function(i, row){
+        console.log(i, row);
+        });
+    }
+});
+
+
 </script>
 
 @endsection
@@ -185,6 +206,7 @@
                             <div id="myfirstchart" style="width:'my-auto'"></div>
                         </div>
                     </div>
+
                     <div class="row mt-6">
                         <div class="col text-center">
                             <h5 class="font-weight-normal mt-2">POSITIF</h5>
@@ -204,6 +226,12 @@
                         <div class="chart-wrapper">
                         <canvas id="deals" class="chart-dropshadow-success chartjs-render-monitor" hidden="" height="85" width="0" style="display: block; width: 0px; height: 85px;"></canvas>
                     </div>
+                    </div>
+                </br>
+                    <div class="row mt-6">
+                        <div class="col text-center">
+                        <a href="https://kawalcovid19.blob.core.windows.net/viz/statistik_harian.html" class="btn btn-sm btn-primary px-3">Lihat Statistik Harian</a>
+                        </div>
                     </div>
                 </div>
             </div>
